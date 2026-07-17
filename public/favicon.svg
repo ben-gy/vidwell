@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Vidwell">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b7bff"/>
+      <stop offset="1" stop-color="#6a4bff"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#0b0b12"/>
+  <rect x="4.75" y="4.75" width="54.5" height="54.5" rx="13.25" fill="none" stroke="url(#g)" stroke-width="1.5" opacity="0.55"/>
+  <!-- play triangle -->
+  <path d="M25 21 L44 32 L25 43 Z" fill="url(#g)"/>
+  <!-- compression arrows squeezing inward -->
+  <g stroke="#8b7bff" stroke-width="3.2" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M13 15 L13 25 M9 21 L13 25 L17 21"/>
+    <path d="M51 49 L51 39 M47 43 L51 39 L55 43"/>
+  </g>
+</svg>

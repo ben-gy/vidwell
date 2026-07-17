@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0b0b12" />
+    <meta
+      name="description"
+      content="Compress and trim video right in your browser — shrink a big MP4/MOV, cut a clip, cap the resolution, export a smaller MP4. Nothing is uploaded. No account, no watermark. Works offline."
+    />
+    <meta property="og:title" content="Vidwell — compress & trim video in your browser" />
+    <meta
+      property="og:description"
+      content="Shrink and trim video locally with WebCodecs. Pick a quality, cut a range, export a smaller MP4. Nothing is uploaded — no account, no watermark."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- CSP: self only. The sole outbound call is the Cloudflare Web Analytics beacon.
+         'wasm-unsafe-eval' + blob:/data: cover the local WebCodecs/mediabunny WASM. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://cloudflareinsights.com blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none';"
+    />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Vidwell — compress &amp; trim video in your browser</title>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ba2bab2193ba42c1bea3d6714fcd0e28"}'></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

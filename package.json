@@ -1,0 +1,25 @@
+{
+  "name": "vidwell",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Compress and trim video in your browser — nothing is uploaded.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@mediabunny/aac-encoder": "^1.50.8",
+    "mediabunny": "^1.50.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0",
+    "vitest": "^2.0.0",
+    "@types/node": "^22.0.0",
+    "jsdom": "^25.0.0"
+  }
+}

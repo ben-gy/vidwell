@@ -1,0 +1,17 @@
+{
+  "name": "Vidwell — compress & trim video in your browser",
+  "short_name": "Vidwell",
+  "description": "Compress and trim video in your browser — nothing is uploaded.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0b12",
+  "theme_color": "#0b0b12",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
