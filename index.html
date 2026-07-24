@@ -20,7 +20,7 @@
          'wasm-unsafe-eval' + blob:/data: cover the local WebCodecs/mediabunny WASM. -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://cloudflareinsights.com blob: data: https://feedback.benrichardson.dev; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none';"
+      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://static.cloudflareinsights.com https://feedback.benrichardson.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://cloudflareinsights.com blob: data: https://feedback.benrichardson.dev; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none';"
     />
 
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -65,5 +65,6 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script src="https://feedback.benrichardson.dev/w.js" defer></script>
   </body>
 </html>
